@@ -50,6 +50,7 @@ extern "C" void app_main(void)
         Init and start wifi code goes here...
     */
 
+
     HTTPRequest_BSD req({
         .type = http_request_type::GET,
         .path = "/",
@@ -60,6 +61,11 @@ extern "C" void app_main(void)
             }
         }
     });
+
+    /*
+        Could also be used like this:
+        HTTPRequest_BSD req("example.com", "/", http_request_type::GET);
+    */
     
     esp_err_t result = req.send_and_wait_for_response();
     if(result != ESP_OK){
