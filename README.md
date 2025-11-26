@@ -1,4 +1,4 @@
-The HTTPRequest_BSD class simplifys making a HTTP request on the ESP.
+The HTTPRequest_BSD class simplifys making a HTTP request on the ESP32.
 
 Important:
 I made this code while not knowing there was a esp-idf sollution for doing http(s) request.
